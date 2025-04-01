@@ -22,4 +22,7 @@ Se quiseres ajudar, bora lá!
 *Converte um dado arquivo de vídeo para GIF animado. - criei para inserir exemplos de vídeo em formulários do Google, Moodle ou apresentações (principalmente sobre elementos da linguagem audiovisual).*
 
 ### **> qrcode.py**
-*Cria um QR Code adequado para aplicação em materiais gráficos e apresentações. - depende da biblioteca qrcode* 
+*Cria um QR Code adequado para aplicação em materiais gráficos e apresentações. - depende da biblioteca qrcode.*
+
+### **> sorteio.py**
+*Sorteio de uma sequência de informações para jogar "imagem e ação" como os conceitos básicos das liguagens principais de comunicação. O sorteio acontece com base em uma lista de linguagens e um dicionário para cada linguagem. - depende da biblioteca random.*
