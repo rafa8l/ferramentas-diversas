@@ -11,3 +11,9 @@ Se quiseres ajudar, bora lá!
 ## LISTA BREVE (*às vezes atualizada*)
 ### **singlemizer.sh**
 *Analisa uma pasta em busca de arquivos duplicados e copia (padrão) ou move (opção) para uma pasta de destino separando por tipo (padrão) ou mantendo a estrutura (padrão). Tentei implementar uma opção para renomear os arquivos ocultos (.nome) para "_nome", mas não funciona. Ele produz uma log com detalhes sobre o que foi realizado.*
+
+### **splitter.sh**
+*Separa uma pasta com um grande volume de arquivos em pastas com um número limite de arquivos (determinado pelo usuário). Tem a opção de mudar o nome base das pastas criadas. Cria um log com detalhes sobre o que foi realizado.*
+
+### **meus.sh**
+*Modifica as permissões de uma pasta e seus arquivos (e sub-pastas e seus arquivos), inclusive quem é o dono, para o usuário que está logado. - criei por conta de backups que tenho cujos arquivos pertecem a usuários que criei anteriormente e dos quais não lembro a senha.*
