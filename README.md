@@ -17,10 +17,6 @@ Se quiseres ajudar, bora lá!
 
 ### **> meus.sh**
 *Modifica as permissões de uma pasta e seus arquivos (e sub-pastas e seus arquivos), inclusive quem é o dono, para o usuário que está logado. - criei por conta de backups que tenho cujos arquivos pertecem a usuários que criei anteriormente e dos quais não lembro a senha.*
-<<<<<<< HEAD
 
 ### **togif.sh**
 *Converte um dado arquivo de vídeo para GIF animado. - criei para inserir exemplos de vídeo em formulários do Google, Moodle ou apresentações (principalmente sobre elementos da linguagem audiovisual).*
-=======
-
->>>>>>> 18f889243be5811bb105c8b6fbd11192211e1dd6
