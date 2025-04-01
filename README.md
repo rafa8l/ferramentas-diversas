@@ -20,3 +20,6 @@ Se quiseres ajudar, bora lá!
 
 ### **> togif.sh**
 *Converte um dado arquivo de vídeo para GIF animado. - criei para inserir exemplos de vídeo em formulários do Google, Moodle ou apresentações (principalmente sobre elementos da linguagem audiovisual).*
+
+### **> qrcode.py**
+*Cria um QR Code adequado para aplicação em materiais gráficos e apresentações. - depende da biblioteca qrcode* 
