@@ -14,3 +14,5 @@ qr.make(fit=True)
 
 img = qr.make_image(fill_color="black", back_color="white")
 img.save(input("nome do arquivo: ")+".png")
+
+# Oliveira, R. - 2023
