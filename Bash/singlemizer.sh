@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Opções
+FILE_EXTENSION=""
 MOVE_FILES=false
 MAINTAIN_STRUCTURE=false
 RENAME_HIDDEN=true
@@ -11,7 +12,8 @@ while getopts "msr" opt; do
         m) MOVE_FILES=true ;;
         s) MAINTAIN_STRUCTURE=true ;;
         r) RENAME_HIDDEN=true ;;
-        *) echo "Modo de usar: $0 [-m] [-s] [-r] <source_directory> <destination_directory>"; exit 1 ;;
+        e) FILE_EXTENSION="$OPTARG" ;;
+        *) echo "Modo de usar: $0 [-m] [-s] [-r] [-e] <source_directory> <destination_directory>"; exit 1 ;;
     esac
 done
 shift $((OPTIND - 1))
@@ -21,7 +23,7 @@ DEST_DIR="$2"
 
 # Validação
 if [[ -z "$SOURCE_DIR" || -z "$DEST_DIR" ]]; then
-    echo "Usage: $0 [-m] [-s] [-r] <source_directory> <destination_directory>"
+    echo "Usage: $0 [-m] [-s] [-r] [-e] <source_directory> <destination_directory>"
     exit 1
 fi
 
@@ -50,6 +52,9 @@ detect_and_copy_or_move() {
     local dest_dir="$2"
 
     find "$src_dir" -type f | while IFS= read -r file; do
+        if [[ -n "$FILE_EXTENSION" && "${file##*.}" != "$FILE_EXTENSION" ]]; then
+            continue
+        fi
         checksum=$(sha256sum "$file" | awk '{ print $1 }')
         
         if [[ -z "${file_map[$checksum]}" ]]; then
