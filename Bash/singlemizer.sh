@@ -7,7 +7,7 @@ MAINTAIN_STRUCTURE=false
 RENAME_HIDDEN=true
 
 # Parse
-while getopts "msr" opt; do
+while getopts "msre:" opt; do
     case $opt in
         m) MOVE_FILES=true ;;
         s) MAINTAIN_STRUCTURE=true ;;
@@ -106,6 +106,7 @@ elapsed_minutes=$(((elapsed_time % 3600) / 60))
 elapsed_seconds=$((elapsed_time % 60))
 
 end_datetime=$(date '+%Y-%m-%d %H:%M:%S')
+echo "--------------------------------"
 echo "Processo finalizado em: $end_datetime"
 echo "Duração: ${elapsed_hours}h ${elapsed_minutes}m ${elapsed_seconds}s"
 
